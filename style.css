@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+}
+
+body {
+    position: relative;
+    z-index: -5;
+    overflow-x: hidden;
+}
+
+body a {
+    color: black;
+}
+
+body a:hover {
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100vw;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.logo {
+    padding: 20px 120px 20px 100px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block; 
+    padding: 15px 0; 
+}
+
+.nav_links li a {
+    color: rgba(0, 0, 0, 0.6); 
+}
+
+.nav_links li a:hover {
+    color: rgba(0, 0, 0, 0.9); 
+}
+
+span {
+    padding: 0 15px;
+}
+
+.nav_links li:hover {
+    border-bottom: 3px solid hsl(136, 65%, 51%);
+    border-bottom-color: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+.nav_links li:visited {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li, a, button {
+    font-weight: 300;
+    font-size: 16px; 
+    text-decoration: none; 
+}
+
+button {
+    margin: 5px 120px 5px 100px;
+    padding: 12px 30px; 
+    border-radius: 50px; 
+    border: none; 
+    cursor: pointer;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: white; 
+    font-weight: bold; 
+}
+
+button:hover {
+    background: linear-gradient(to right, hsla(136, 65%, 51%, 0.7), hsla(192, 70%, 51%, 0.7));
+}
+
+/* START OF MAIN */
+
+main {
+    position: relative;
+    z-index: -5;
+}
+
+/* FIRST SECTION */
+
+#first-section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(0, 0%, 98%);
+    z-index: -1;
+}
+
+#promo-text {
+    padding: 160px 100px;
+    font-size: 18px;
+    width: 45vw;
+    height: 90vh;
+}
+
+#promo-text h1 {
+    font-size: 50px;
+    line-height: 1.2em;
+    width: 450px;
+}
+
+#promo-text p {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    width: 450px;
+    line-height: 1.5em;
+}
+
+#promo-text button {
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+}
+
+#bg-intro-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+    overflow: hidden;
+}
+
+#bg-intro-desktop {
+    position: absolute;
+    height: 140vh;
+    top: -170px;
+    left: -55px;
+    z-index: -2;
+}
+
+#mockups-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+}
+
+#mockups {
+    position: absolute;
+    top: -50px;
+    left: 115px;
+    height: 130vh;
+    z-index: -1;
+}
+
+/* SECOND SECTION */
+
+#second-section {
+    position: relative;
+    padding: 80px 100px;
+    background-color: hsl(220, 16%, 96%);
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+}
+
+#why-easybank h2 {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+#why-intro {
+    width: 45vw;
+    line-height: 1.8em;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 30px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 32px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 48vh;
+}
+
+.grid img {
+    width: 25%;
+    height: auto;
+}
+
+.grid p {
+    font-size: 15px;
+    line-height: 1.5em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* THIRD SECTION */
+
+#third-section {
+    position: relative;
+    background-color: hsl(0, 0%, 98%);
+    padding: 80px 100px;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+}
+
+#latest-articles h2 {
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.grid-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 48vh;    
+    border: 1px solid hsl(0, 0%, 98%);
+    overflow: hidden;
+    height: 65vh;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.grid-2 img {
+    position: relative;
+    bottom: 20px;
+    height: 200px;
+    width: auto;
+}
+
+.grid-2 h4,
+.grid-2 h3,
+.grid-2 p {
+    padding: 0 20px;
+}
+
+.grid-2 h4 {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.grid-2 h3 {
+    font-size: 16px;
+}
+
+.grid-2 h3 a:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.grid-2 p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 15px;
+    line-height: 1.5em;
+}
+
+/* END OF MAIN */
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    width: 100vw;
+}
+
+.footer-wrapper {
+    position: absolute;
+    bottom: -50;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    grid-template-rows: 150px;
+}
+
+.grid-3 {
+    background: hsl(233, 26%, 24%);
+    color: white;
+    width: 100%
+}
+
+.grid-3 .logo {
+    position: relative;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+#white-logo {
+    position: relative;
+    top: -48px;
+    left: 140px;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    z-index: 2;
+    font-family: 'Muli', sans-serif;
+    width: 150px;
+}
+
+.icon {
+    position: relative;
+    left: 100px;
+    padding-right: 10px;
+    bottom: 10px;  
+    cursor: pointer;  
+}
+
+.grid-3 ul li {
+    list-style: none;
+}
+
+.grid-3 ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.grid-3 ul li a:hover {
+    color: hsl(192, 70%, 51%);
+}
+
+.footer-links {
+    padding-top: 35px;
+    padding-left: 20px;
+}
+
+.footer-links ul {
+    display: block;
+}
+
+
+.footer-links ul li {
+    padding-bottom: 15px;
+}
+
+.copyright {
+    position: relative;
+}
+
+.copyright .req-invite-btn {
+    position: absolute;
+    left: 170px;
+    top: 30px;
+}
+
+.copyright p {
+    position: absolute;
+    left: 190px;
+    top: 105px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
