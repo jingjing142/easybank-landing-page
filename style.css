@@ -11,8 +11,8 @@
 
 body {
     position: relative;
-    z-index: -5;
-    overflow-x: hidden;
+    z-index: -3;
+    overflow-x: hidden !important;
 }
 
 body a {
@@ -98,7 +98,7 @@ button:hover {
 
 main {
     position: relative;
-    z-index: -5;
+    z-index: -3;
 }
 
 /* FIRST SECTION */
@@ -351,7 +351,6 @@ footer {
     display: block;
 }
 
-
 .footer-links ul li {
     padding-bottom: 15px;
 }
@@ -373,3 +372,593 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* INVISIBLE ELEMENTS */
+
+#hamburger {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+#menu-wrapper {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.1));
+    height: 110vh;
+    width: auto;
+    position: relative;
+    bottom: 90vh;
+}
+
+#mobile-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background-color: white;
+    width: 80vw;
+    height: 40vh;
+    border-radius: 8px;
+    position: absolute;
+    top: 75px;
+    left: 40px;
+}
+
+#mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 2em;
+    z-index: 100;
+}
+
+#mobile-nav ul li a:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1130px) {
+    .logo {
+        padding-right: 50px;
+    }
+
+    header .req-invite-btn {
+        position: relative; 
+        margin-left: 10px;
+    }
+    
+    .grid-2 {
+        display: flex;
+        justify-content: space-around;
+        height: 50vh;
+    }
+
+    .grid-2 img {
+        height: 140px;
+        width: auto;
+    }
+
+    .blog-text {
+        display: none;
+    }
+
+    .copyright .req-invite-btn {
+        left: 120px;
+    }
+
+    .copyright p {
+        left: 140px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    #promo-text p {
+        width: 350px;
+    }
+
+    #bg-intro-desktop {
+        position: absolute;
+        height: 130vh;
+        top: -140px;
+        left: -10px;
+    }
+    
+    #mockups {
+        position: absolute;
+        top: -20px;
+        left: 115px;
+        height: 100vh;
+    }
+    
+    .grid-2 {
+        height: 50vh;
+    }
+
+    .grid-2 img {
+        height: 130px;
+    }
+
+    .copyright .req-invite-btn {
+        left: 40px;
+    }
+
+    .copyright p {
+        left: 90px;
+        font-size: 14px;
+    }
+
+    .grid-3 ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    header .req-invite-btn {
+        display: none;
+    }
+
+    .nav_links {
+        padding-right: 70px;
+    }
+
+    #promo-text h1 {
+        font-size: 40px;
+        width: 55vh;
+    }
+
+    #bg-intro-desktop {
+        position: absolute;
+        height: 110vh;
+        top: -90px;
+        left: 20px;
+    }
+    
+    #mockups {
+        position: absolute;
+        top: -10px;
+        left: 115px;
+        height: 100vh;
+    }
+
+    #why-intro {
+        width: 70vw;
+    }
+
+    #why-easybank h2 {
+        font-size: 30px;
+    }
+
+    .grid {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .grid p {
+        font-size: 14px;
+    }
+
+    #latest-articles h2 {
+        font-size: 30px;
+    }
+
+    .grid-2 h3 a {
+        font-size: 14px;
+    }
+
+    .copyright .req-invite-btn {
+        left: -50px;
+    }
+
+    .copyright p {
+        left: 50px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .grid-3 ul li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .logo {
+        margin-left: -50px;
+    }
+
+    #why-easybank h2 {
+        margin-top: -40px;
+        margin-bottom: -10px;
+    }
+
+    #why-intro {
+        margin-bottom: -10px;
+        font-size: 15px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2, 2fr);
+        grid-auto-rows: minmax(150px, 1fr);
+        grid-row-gap: 30px;
+    }
+
+    .grid {
+        height: 30vh;
+    }
+
+    .grid img {
+        width: 20%;
+        height: auto;
+    }
+
+    #latest-articles h2 {
+        margin-top: -40px;
+        margin-bottom: -5px;
+    }
+
+    .grid-2 {
+        height: 35vh;
+    }
+
+    .grid-2 img {
+        height: 22vh;
+        width: auto;
+    }
+
+    #white-logo {
+        position: relative;
+        left: 82px;
+    }
+
+    .icon {
+        position: relaive;
+        left: 45px;
+    }
+
+    .copyright .req-invite-btn {
+        left: -80px;
+    }
+
+    .copyright p {
+        left: 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .nav_links ul li a {
+        font-size: 14px;
+    }
+
+    #promo-text {
+        padding-left: 50px;
+    }
+
+    #promo-text .req-invite-btn {
+         margin-left: 50px;
+    }
+
+    #bg-intro-desktop {
+        position: absolute;
+        height: 90vh;
+        top: -50px;
+        left: 60px;
+    }
+    
+    #mockups {
+        position: absolute;
+        top: 80px;
+        left: 120px;
+        height: 70vh;
+    }
+
+    #why-easybank {
+        margin-left: -50px;
+    }
+    
+    .grid h3 {
+        font-size: 16px;
+    }
+    
+    .grid p {
+        font-size: 14px;
+    }
+
+    #latest-articles {
+        margin-left: -50px;
+    }
+
+    .grid-3 .req-invite-btn {
+        display: none;
+    }
+
+    .copyright p {
+        width: 20vh;
+        left: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #why-intro {
+        width: 80vw;
+    }
+    .wrapper {
+        margin-right: -50px;
+    }
+
+    header {
+        position: static;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    #hamburger {
+        position: relative;
+        right: 70px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    #close-btn {
+        position: relative;
+        right: 70px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .copyright p {
+        left: 20px;
+    }
+}
+
+/* MOBILE VERSION */
+
+@media (max-width: 500px) {
+
+    /* FIRST SECTION */
+
+    #first-section {
+        height: 110vh;
+    }
+
+    #bg-intro-container {
+        width:100vw;
+        height: 50vh;
+    }
+
+    #bg-intro-desktop {
+        position: absolute;
+        width: 150%;
+        height: auto;
+        top: -300px;
+        left: -80px;
+    }
+    
+    #mockups-container {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #mockups {
+        position: absolute;
+        left: 50px;
+        top: -180px;
+        width: 80%;
+        height: auto;
+    }
+
+    #promo-text {
+        position: relative;
+        padding: 160px 100px;
+        top: 25vh;
+        width: 50vw;
+    }
+
+    #promo-text p {
+        position: relative;
+        right: 25px;
+        padding: 10px 0;
+        width: 350px;
+        font-size: 16px;
+        line-height: 1.8em;
+    }
+
+    #promo-text button {
+        position: absolute;
+        margin-top: 10px;
+        left: 110px;
+    } 
+    
+    /* SECOND SECTION */
+
+    #second-section {
+        position: relative;
+        padding: 80px 100px;
+        background-color: hsl(220, 16%, 96%);
+        height: 250vh;
+        width: 100vw;
+    }
+    
+    #why-easybank h2 {
+        position: relative;
+        left: 90px;
+        text-align: center;
+        font-size: 30px;
+        width: 200px;
+        margin-bottom: 5px;
+        line-height: 1.3em;
+    }
+    
+    #why-intro {
+        position: relative;
+        left: 10px;
+        width: 70vw;
+        text-align: center;
+        line-height: 1.8em;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-row-gap: 10px;
+        margin-right: 0;
+    }
+    
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 48vh;
+        text-align: center;
+    }
+    
+    .grid img {
+        width: 20%;
+        height: auto;
+    }
+
+    .grid h3 {
+        font-size: 18px;
+    }
+    
+    .grid p {
+        font-size: 16px;
+    }
+
+    /* THIRD SECTION */
+    
+    #latest-articles h2 {
+        font-size: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    
+    .grid-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;  
+        height: 65vh;
+        margin-bottom: 15px;
+    }
+    
+    .grid-2 img {
+        position: relative;
+        bottom: 20px;
+        height: 200px;
+        width: auto;
+    }
+    
+    .grid-2 h4,
+    .grid-2 h3,
+    .grid-2 p {
+        padding: 0 20px;
+    }
+    
+    .grid-2 h4 {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .grid-2 h3 a {
+        font-size: 18px;
+    }
+    
+    .grid-2 h3 a:hover {
+        color: hsl(136, 65%, 51%);
+    }
+    
+    .grid-2 p {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.6);
+        padding-bottom: 15px;
+        line-height: 1.5em;
+    }
+
+    .blog-text {
+        display: initial;
+    }
+
+    /* FOOTER */
+
+    .footer-wrapper {
+        top: 1150px;
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 20vh 30vh 30vh;
+    }
+
+    .footer-links ul li a {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 16px;
+        position: relative;
+        bottom: 30px;
+        right: 40px;
+    }
+
+    .move {
+        position: relative;
+        bottom: 10px;
+    }
+    
+    .grid-3 .logo {
+        position: relative;
+        margin-top: 30px;
+        margin-left: 50px;
+        z-index: 1;
+    }
+    
+    #white-logo {
+        position: relative;
+        top: -48px;
+        left: 185px;
+    }
+    
+    .icon {
+        position: relative;
+        left: 135px;
+        padding-right: 15px;
+        bottom: 10px;  
+        cursor: pointer;  
+    }
+    
+    .copyright {
+        position: relative;
+        bottom: 50px;
+    }
+    
+    .copyright .req-invite-btn {
+        display: initial;
+        position: absolute;
+        left: 30px;
+        top: 0;
+    }
+    
+    .copyright p {
+        position: absolute;
+        font-size: 15px;
+        font-weight: normal;
+        width: 50vw;
+        left: 90px;
+        top: 70px;
+    }
+    
+}
